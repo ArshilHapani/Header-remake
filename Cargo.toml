@@ -1,7 +1,16 @@
 [package]
 name = "headers-remake"
+authors = ["Arshil Hapani <arshilhapani998@gmail.com>"]
 version = "0.1.0"
 edition = "2021"
+description = "It is a remake of the headers"
+readme = "README.md"
+repository = "https://github.com/ArshilHapani/Header-remake"
+license = "MIT"
+license-file = "LICENSE"
+keywords = ["headers", "remake", "rust", "cli"]
+categories = ["cli", "development-tools"]
+
 
 [dependencies]
 arboard = "3.4.1"
