@@ -1,0 +1,14 @@
+[package]
+name = "headers-remake"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arboard = "3.4.1"
+color-print = "0.3.6"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
