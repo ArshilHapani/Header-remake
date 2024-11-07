@@ -9,8 +9,6 @@ repository = "https://github.com/ArshilHapani/Header-remake"
 license = "MIT"
 license-file = "LICENSE"
 keywords = ["headers", "remake", "rust", "cli"]
-categories = ["cli", "development-tools"]
-
 
 [dependencies]
 arboard = "3.4.1"
