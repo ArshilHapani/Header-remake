@@ -45,7 +45,7 @@ This tool generates customizable, visually appealing comment headers for program
   - Download binary using `curl` :
     ```sh
     # download the binary (for Linux and macOS)
-    curl -o headers https://github.com/ArshilHapani/Header-remake/releases/download/0.1.2/headers-remake
+    curl -L -o headers https://github.com/ArshilHapani/Header-remake/releases/download/0.1.2/headers-remake
     # make the binary executable
     chmod +x headers
     # copy the binary to a directory in your PATH
