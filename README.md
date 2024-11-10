@@ -4,6 +4,20 @@ Header Remake is a CLI tool inspired by [headers](https://github.com/transmissio
 
 This tool generates customizable, visually appealing comment headers for programming files. With options for symbols, length, and format, Header Remake makes it easy to add professional, readable headers to code files.
 
+## Table of Contents
+
+- [Header Remake](#header-remake)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Options](#options)
+    - [Examples](#examples)
+  - [Errors](#errors)
+  - [Release](#release)
+  - [Contributing](#contributing)
+  - [License](#license)
+
 ## Features
 
 - **Custom Symbols**: Style your headers with any symbol (e.g., `#` for Python, `//` for JavaScript).
@@ -15,19 +29,28 @@ This tool generates customizable, visually appealing comment headers for program
 ## Installation
 
 - ### By Cloning the Repository
+
   1. Clone the repository:
-      ```sh
-      git clone https://github.com/ArshilHapani/Header-remake
-      cd Header-remake
-      ```
+     ```sh
+     git clone https://github.com/ArshilHapani/Header-remake
+     cd Header-remake
+     ```
   2. Build the project:
-      ```sh
-      cargo build --release
-      ```
+     ```sh
+     cargo build --release
+     ```
 
 - ### By Downloading the Binary
-  - Download the latest binary from the [releases page](https://github.com/ArshilHapani/Header-remake/releases).
-  - Directly download the binary from [here](https://github.com/ArshilHapani/Header-remake/releases/download/1.0.0/headers-remake)
+  - Directly download the binary from [here](https://github.com/ArshilHapani/Header-remake/releases/download/1.0.0/headers-remake) or
+  - Download binary using `curl` :
+    ```sh
+    # download the binary (for Linux and macOS)
+    curl -o headers https://github.com/ArshilHapani/Header-remake/releases/download/0.1.2/headers-remake
+    # make the binary executable
+    chmod +x headers
+    # copy the binary to a directory in your PATH
+    sudo mv headers /usr/local/bin
+    ```
 
 ## Usage
 
@@ -41,43 +64,69 @@ headers [OPTIONS] [TITLE]
 
 ### Options
 
-| Option              | Description                                                                                       |
-|---------------------|---------------------------------------------------------------------------------------------------|
-| `-s`, `--symbol`    | Set the symbol for the header (default: `/`).                                                     |
-| `-l`, `--length`    | Set the total length of the header line (default: `50`).                                          |
-| `-sl`, `--single-line` | Generate a single-line header instead of a boxed header.                                      |
-| `-h`, `--help`      | Display help information.                                                                         |
+| Option                 | Description                                              |
+| ---------------------- | -------------------------------------------------------- |
+| `-s`, `--symbol`       | Set the symbol for the header (default: `/`).            |
+| `-l`, `--length`       | Set the total length of the header line (default: `50`). |
+| `-sl`, `--single-line` | Generate a single-line header instead of a boxed header. |
+| `-h`, `--help`         | Display help information.                                |
 
 ### Examples
 
-1. **Basic Header**:
-   ```sh
-   headers "My Project"
-   ```
-   Creates a 50-character header with the title "MY PROJECT" centered using `/`.
+- **Basic Header**:
 
-2. **Custom Symbol and Length**:
-   ```sh
-   headers -s "#" -l 60 "My Header"
-   ```
-   Creates a 60-character header with `#` symbols surrounding "MY HEADER".
+  ```sh
+  headers "My Project"
+  ```
 
-3. **Single-Line Header**:
-   ```sh
-   headers -sl -s "//" "Single Line"
-   ```
-   Generates a single-line header formatted with `//` symbols.
+  **Output:**
 
-4. **Default Header**:
-   ```sh
-   headers
-   ```
-   Creates a default 50-character header using `/` and the title "TITLE".
+  ```
+  //////////////////////////////////////////////////
+  /////////////////// MY PROJECT ///////////////////
+  //////////////////////////////////////////////////
+  ```
+
+  Creates a 50-character header with the title "MY PROJECT" centered using `/`.
+
+- **Custom Symbol and Length**:
+
+  ```sh
+  headers -s "#" -l 60 "My Header"
+  ```
+
+  **Output:**
+
+  ```
+  ############################################################
+  ######################## MY HEADER ########################
+  ############################################################
+  ```
+
+  Creates a 60-character header with `#` symbols surrounding "MY HEADER".
+
+- **Single-Line Header**:
+
+  ```sh
+  headers -sl -s "//" "Single Line"
+  ```
+
+  **Output:**
+
+  ```
+  //////////////////////////////////// SINGLE LINE ////////////////////////////////////
+  ```
+
+  Generates a single-line header formatted with `//` symbols.
 
 ## Errors
 
 - **Length Too Short**: If the specified length is too small to accommodate the title, an error message appears.
 - **Clipboard Issues**: If clipboard access fails, an error message notifies the user.
+
+## Release
+
+Latest release can be found [here](https://github.com/ArshilHapani/Header-remake/releases)
 
 ## Contributing
 
