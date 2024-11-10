@@ -1,7 +1,7 @@
 [package]
 name = "headers-remake"
 authors = ["Arshil Hapani <arshilhapani998@gmail.com>"]
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "It is a remake of the headers"
 readme = "README.md"
