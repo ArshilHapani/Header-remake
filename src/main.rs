@@ -7,7 +7,11 @@ use utils::{print_headers_with_options, print_help_menu};
 
 fn main() {
     let args: Vec<String> = args().collect();
-    if args.contains(&"-h".to_string()) || args.contains(&"--help".to_string()) {
+    let show_help = args.contains(&"-h".to_string())
+        || args.contains(&"--help".to_string())
+        || args.len() == 1
+        || args.is_empty();
+    if show_help {
         print_help_menu();
         return;
     }
