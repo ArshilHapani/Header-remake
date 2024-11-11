@@ -1,5 +1,7 @@
 # Header Remake
 
+![cover image](./assets/headers_cover_img.png)
+
 Header Remake is a CLI tool inspired by [headers](https://github.com/transmissions11/headers) by `transmission11`.
 
 This tool generates customizable, visually appealing comment headers for programming files. With options for symbols, length, and format, Header Remake makes it easy to add professional, readable headers to code files.
