@@ -130,6 +130,9 @@ headers [OPTIONS] [TITLE]
 
 Latest release can be found [here](https://github.com/ArshilHapani/Header-remake/releases)
 
+## Wiki
+read the [wiki](https://github.com/ArshilHapani/Header-remake/wiki) for more information
+
 ## Contributing
 
 Contributions are welcome! Please submit issues or create pull requests for improvements or new features.
